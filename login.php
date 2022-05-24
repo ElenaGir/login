@@ -11,10 +11,10 @@
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
         <title>Document</title>
     </head>
-    <body class="bg-[#191720] w-screen h-full">
-        <div id="container" class="text-white flex-col justify-center w-full h-full">
+    <body class="bg-[#191720] w-full h-screen flex justify-center items-center">
+        <div id="container" class="text-white flex-col w-10/12">
             <!-- zone de connexion -->
-            <form action="verification.php" method="POST" class="flex flex-col w-full p-8 h-full">
+            <form action="verification.php" method="POST" class="flex flex-col">
                 <h1 class="text-xl ">Binary</h1>
                 <p class="pt-10">We are</p>
                 <h2 class="text-2xl pt-8">Invite online right now.</h2>
@@ -35,10 +35,11 @@
                         echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
                 }
                 ?>
-                
             </form>
-            <p class="text-right p-4 h-full">Already have an account ? Sign in </p>
-            
+            <div class="absolute bottom-8 right-8 flex">
+                 <p class="text-[#616066]"> Already have an account?</p>  
+                 <p>Sign in</p>       
+            </div>    
         </div>      
     </body>
     </html>
