@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
 
 *{
@@ -9,6 +9,3 @@ h1{
     font-family: 'Press Start 2P';
 }
 
-  .invisible {
-    visibility: hidden;
-  }

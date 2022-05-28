@@ -15,12 +15,18 @@
             <img src="assets/image.png" class="h-full hidden lg:flex lg:-z-10 absolute left-0">
             <header class="text-white w-10/12 mt-16 lg:w-5/12 lg:mt-8">
                 <p class="hidden lg:flex text-5xl font-bold">Sign up</p>
-                <div class="lg:flex lg:flex-col  lg:rounded-3xl lg:backdrop-blur-3xl lg:w-4/12 lg:h-5/6 lg:absolute lg:left-28">
-                    <h1 class="text-xl lg:p-4 lg:text-2xl lg:bg-[#7377D5] lg:w-fit lg:mt-8 lg:ml-8">Binary</h1>
-                    <p class="pt-10 lg:p-8">We are</p>
-                    <h2 class="text-2xl pt-8 lg:pt-2 lg:p-8">Invite online right now.</h2>
-                    <p class="pt-2 lg:p-0 lg:pl-8">10 people have joined our team.</p>
-                    <p class="lg:p-0 lg:pl-8">We invite you to join the tribe.</p>                   
+                <div id="accueil" class="lg:flex lg:flex-col  lg:rounded-3xl lg:backdrop-blur-2xl lg:w-4/12 lg:h-5/6 lg:absolute lg:left-28">
+                    <h1 class="text-xl lg:p-4  lg:bg-[#7377D5] lg:w-fit lg:mt-8 lg:ml-8">Binary</h1>
+                    <p class="pt-10 lg:p-8 lg:text-[32px] font-semibold">We are</p>
+                    <h2 class="text-2xl pt-8 lg:pt-2 lg:p-8 lg:text-[40px]">Invite online right now.</h2>
+                    <p class="pt-2 lg:p-0 lg:pl-8 lg:text-xl">10 people have joined our team.</p>
+                    <p class="lg:p-0 lg:pl-8 lg:text-xl">We invite you to join the tribe.</p>                   
+                </div>
+                <div id="inscrip" class="hidden">
+                    <p class="text-xl lg:text-4xl pt-8 lg:pt-20 ">Congratulations, you are </p>
+                    <p class="text-xl lg:text-4xl pt-2 lg:p-0 ">part of the <b>binary</b> tribe !</p>
+                    <p class="text-xl lg:text-[32px] lg:pt-20 pt-20">Take a look at our <b>great blog</b></p>  
+                    <p class="text-xl lg:text-[32px] lg:p-2 ">and read our latest articles.</p>       
                 </div>     
             </header>
             <!-- zone de connexion -->
@@ -33,7 +39,7 @@
                 <input id="password" type="password" placeholder="" name="password" class="lg:pl-5 lg:mt-5 h-12 bg-[#1E1C24] border-[#34333C] border-2 invalid:border-red-500 rounded-lg lg:h-16">
                 <p class="invisible m-3" id="errorPassword">Please enter a valid password</p>
 
-                <input type="submit" id='submit' value='Sign up'class=" mt-2 lg:mt-2 lg:h-16 h-12 bg-gradient-to-r from-[#6871FC] to-[#393DDC] rounded-xl font-lg font-bold">
+                <input type="submit" id='submit' value='Sign up'class=" mt-2 lg:mt-2 lg:h-16 h-12 bg-gradient-to-r from-[#6871FC] to-[#393DDC] rounded-xl text-lg font-bold">
                 <hr WIDTH="100%"  ALIGN="center" class="mt-14 border-[#34333C] hidden lg:flex">
                 <?php
                 if(isset($_GET['erreur'])){
@@ -44,7 +50,7 @@
                
                 ?>
             </form>
-            <div class="flex flex-row-reverse mt-14 lg:mr-18 w-10/12 lg:w-1/2 lg:pr-24">
+            <div class="flex flex-row-reverse mt-14 lg:mr-18 w-10/12 lg:w-1/2 lg:pr-24 pb-6">
                 <p class="text-sm  text-[#616066] lg:text-xl">Already have an account ? <span class="font-bold text-white">Sign in</span></p>
             </div>  
       
